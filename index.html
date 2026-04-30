@@ -1,0 +1,624 @@
+<!doctype html>
+<html lang="de-CH">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Switch-Monitor | Smartmeter-Netzüberwachung</title>
+    <meta
+      name="description"
+      content="Switch-Monitor verbindet Smartmeter-Netzüberwachung, Port-Monitoring, Endpoint Discovery, DLMS-Spannung, Auto-Übernahmen, Incident-Management und Standortbezug in einer operativen Oberfläche."
+    />
+    <link rel="icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+
+    <header class="site-header" data-site-header>
+      <a class="brand" href="#start" aria-label="Switch-Monitor Start">
+        <span class="brand-mark" aria-hidden="true">SM</span>
+        <span>Switch-Monitor</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-lines" aria-hidden="true"></span>
+        <span class="sr-only">Navigation öffnen</span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Hauptnavigation">
+        <a href="#nutzen">Nutzen</a>
+        <a href="#workflow">Ablauf</a>
+        <a href="#funktionen">Funktionen</a>
+        <a href="#automation">Auto-Übernahme</a>
+        <a href="#screenshots">Ansichten</a>
+        <a href="#bereitstellung">Bereitstellung</a>
+        <a href="#einsatz">Einsatzfälle</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </header>
+
+    <main id="inhalt">
+      <section id="start" class="hero" aria-labelledby="hero-title">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Für Energieversorger und Smartmeter-Kommunikationsnetze</p>
+          <h1 id="hero-title">Smartmeter-Netzstörungen vom Switch-Port bis zum Gebäude lokalisieren.</h1>
+          <p class="hero-copy">
+            Switch-Monitor verbindet Port-Monitoring, Endpoint Discovery, DLMS-Spannung,
+            Karte und Incidents in einer operativen Oberfläche für Netzbetrieb
+            und Störungsdienst.
+          </p>
+          <div class="hero-audience" aria-label="Geeignet für">
+            <span>Netzbetrieb</span>
+            <span>Smartmeter-Rollout</span>
+            <span>Störungsdienst</span>
+            <span>Interne Betriebslage</span>
+          </div>
+          <div class="hero-actions" aria-label="Kontaktaktionen">
+            <a class="button button-primary" href="mailto:martincarlini1996@gmail.com?subject=Demo%20Switch-Monitor">Demo anfragen</a>
+            <a class="button button-secondary" href="#bereitstellung">Anforderungen ansehen</a>
+          </div>
+          <dl class="hero-facts" aria-label="Kurzüberblick">
+            <div>
+              <dt>Module</dt>
+              <dd>Port-Monitor, Karte, Live-Ping, Topologie, Endpoint Discovery, Spannung, Performance</dd>
+            </div>
+            <div>
+              <dt>Signale</dt>
+              <dd>SNMP, Ping, DLMS, DHCP</dd>
+            </div>
+            <div>
+              <dt>Stand</dt>
+              <dd>V3.17, April 2026</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section id="nutzen" class="section intro-section">
+        <div class="section-inner intro-grid">
+          <div>
+            <p class="section-kicker">Betrieblicher Nutzen</p>
+            <h2>Vom technischen Netzsignal zur betroffenen Adresse.</h2>
+          </div>
+          <div class="intro-copy">
+            <p>
+              Switch-Monitor bündelt Portzustände, Gerätestatus, Topologie, Endpoint-Daten und
+              Spannungswerte in einer gemeinsamen Betriebssicht. Dadurch werden Störungen nicht nur
+              erkannt, sondern mit Standort, Gebäude, Port und Historie verbunden.
+            </p>
+            <p>
+              So bleibt klar, welche Komponente betroffen ist, wo der Impact liegt und welche
+              Information für Entstörung, Priorisierung oder Kommunikation relevant ist.
+            </p>
+            <p>
+              Entwickelt aus realem Smartmeter- und Glasfaser-Netzbetrieb: mit Erfahrung aus
+              Portdaten, Standortbezug und der praktischen Überwachung von Zählern im Feld.
+            </p>
+          </div>
+        </div>
+        <div class="section-inner value-grid" aria-label="Kernnutzen">
+          <article class="value-card">
+            <span class="mini-icon">01</span>
+            <h3>Schneller reagieren</h3>
+            <p>Abweichungen aus Port-Monitor, Live-Ping, Topology-Health und Spannung werden zentral sichtbar.</p>
+          </article>
+          <article class="value-card">
+            <span class="mini-icon">02</span>
+            <h3>Standorte einordnen</h3>
+            <p>Port- und Adressdaten verbinden technische Ereignisse mit Gebäuden, Karte und Incident-Kontext.</p>
+          </article>
+          <article class="value-card">
+            <span class="mini-icon">03</span>
+            <h3>Nachvollziehbar arbeiten</h3>
+            <p>Incidents, Historie und Exporte halten Störungen, Statuswechsel und Massnahmen dokumentiert.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="warum" class="section why-section">
+        <div class="section-inner section-heading">
+          <p class="section-kicker">Warum Switch-Monitor?</p>
+          <h2>Weniger Werkzeugwechsel, mehr eindeutige Betriebslage.</h2>
+          <p>
+            Viele marktübliche Monitoring- oder Inventarlösungen decken einzelne Teilbereiche gut
+            ab, bleiben aber bei Smartmeter-Netzen oft getrennt: Portstatus hier, Kartenmaterial
+            dort, Zählerwerte wieder in einer anderen Sicht. Switch-Monitor verbindet diese
+            Perspektiven gezielt für den operativen Netzbetrieb.
+          </p>
+        </div>
+        <div class="section-inner compare-grid" aria-label="Vergleich Status quo und Switch-Monitor">
+          <article class="compare-card compare-card-muted">
+            <span class="compare-label">Heute oft</span>
+            <h3>Excel, einzelne Tools und manuelle Suche.</h3>
+            <ul class="plain-list">
+              <li>Portdaten, Karte, Incidents und Messwerte liegen getrennt.</li>
+              <li>Der betroffene Standort muss aus mehreren Quellen zusammengesucht werden.</li>
+              <li>Neue Ports oder Zähler werden manuell geprüft und nachgeführt.</li>
+              <li>Exports, Mails und Störungsnotizen entstehen nicht aus einer gemeinsamen Sicht.</li>
+            </ul>
+          </article>
+          <article class="compare-card compare-card-strong">
+            <span class="compare-label">Mit Switch-Monitor</span>
+            <h3>Port, Gebäude, Incident und Messwert in einer Sicht.</h3>
+            <ul class="plain-list">
+              <li>Switch-Port, Endpoint, Gebäude, Karte und Spannung werden gemeinsam angezeigt.</li>
+              <li>House-Info zeigt den Standortkontext direkt aus der Karte heraus.</li>
+              <li>Kontrollierte Auto-Übernahmen reduzieren manuelles Nachführen.</li>
+              <li>Incidents, Historie, Mail-Digests und Exporte bleiben nachvollziehbar verbunden.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="workflow" class="section workflow-section">
+        <div class="section-inner section-heading">
+          <p class="section-kicker">Operativer Ablauf</p>
+          <h2>Von der Abweichung bis zur dokumentierten Störung.</h2>
+          <p>
+            Der Nutzen entsteht nicht nur durch einzelne Module, sondern durch den gemeinsamen
+            Ablauf: technische Signale werden erkannt, einem Ort zugeordnet, alarmiert,
+            dokumentiert und für die Weitergabe exportierbar gemacht.
+          </p>
+        </div>
+        <div class="section-inner workflow-grid" aria-label="Switch-Monitor Ablauf">
+          <article>
+            <span>01</span>
+            <h3>Erkennen</h3>
+            <p>Portstatus, Ping, Topologie, Endpoint-Sichtungen, Performance und Spannung liefern die technischen Signale.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Zuordnen</h3>
+            <p>Switch, Port, Gebäude, Karte und House-Info verbinden das Ereignis mit dem betroffenen Standort.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Alarmieren</h3>
+            <p>Managerbezogene E-Mail-Regeln leiten Meldungen gezielt an die passenden Empfänger weiter.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Dokumentieren</h3>
+            <p>Incidents halten Status, Ticketnummer, Verlauf, Notizen und manuelle Behebungen nachvollziehbar fest.</p>
+          </article>
+          <article>
+            <span>05</span>
+            <h3>Exportieren</h3>
+            <p>Incident-Daten können als Excel-Datei, Inventardaten als CSV oder Excel für Auswertung und Übergabe exportiert werden.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="funktionen" class="section section-alt">
+        <div class="section-inner section-heading">
+          <p class="section-kicker">Funktionsumfang</p>
+          <h2>Grundfunktionen für Netzbetrieb, Monitoring und Auswertung.</h2>
+          <p>
+            Die Module greifen ineinander: ein technisches Ereignis kann als Incident erscheinen,
+            auf der Karte sichtbar werden und in Mail-Digests oder Exporten weiterverarbeitet werden.
+          </p>
+        </div>
+        <div class="section-inner feature-grid">
+          <article class="feature-card">
+            <span class="feature-code">DB</span>
+            <h3>Zentrales Dashboard</h3>
+            <p>Manager-Zustände, offene Ereignisse, Laufzeitdaten und Handlungsbedarf in einer kompakten Betriebslage.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-code">PM</span>
+            <h3>Port-Monitor</h3>
+            <p>SNMP-basierter Soll-/Ist-Vergleich für Switch-Ports, Baselines, neue Uplinks und Port-Up/Port-Down-Ereignisse, inklusive Excel-Import für die Portdatenbank.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-code">LP</span>
+            <h3>Live-Ping</h3>
+            <p>Erreichbarkeitsprüfung für Ziele ohne Spezialprotokoll, mit Schwellen gegen Fehlalarme.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-code">TH</span>
+            <h3>Topology-Health</h3>
+            <p>Vergleicht Layer-2-Topologie mit Snapshots und erkennt fehlende, neue oder unklare Verbindungen.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-code">MP</span>
+            <h3>Karte</h3>
+            <p>Räumliche Einordnung von Standorten, Statusmarkern, offenen Incidents, Spannungshinweisen und Gebäude-Detailansicht mit Anschlussstatus und Historie.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-code">IC</span>
+            <h3>Incident-Center</h3>
+            <p>Störungen mit Ticketnummer, Verlauf, Filter, Notizen, manueller Behebung und Exportfunktionen für Auswertung oder Weitergabe.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-code">PF</span>
+            <h3>Performance-Monitor</h3>
+            <p>Zeitreihen für Traffic, Errors und qualitative Auffälligkeiten ausgewählter Netzwerkgeräte.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-code">ED</span>
+            <h3>Endpoint Discovery</h3>
+            <p>Host-, MAC-, DHCP-, ARP- und Portkontext für Geräte, die im Smartmeter-Netz automatisch erkannt werden.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-code">SP</span>
+            <h3>Spannungsmonitoring</h3>
+            <p>DLMS-Werte pro Phase mit stabiler Phasenerkennung, Unterspannungswarnung und Zuordnung zu Port und Standort.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="discovery" class="section discovery-section">
+        <div class="section-inner section-heading">
+          <p class="section-kicker">Neue Ausbaustufe</p>
+          <h2>Endpoint Discovery und DLMS-Spannung erweitern den Blick bis zum Zähler.</h2>
+          <p>
+            Endpoint Discovery verbindet erkannte Geräte mit Switch, Port, VLAN und Standort. Das
+            Spannungsmodul nutzt diesen Kontext, damit Messwerte nicht isoliert bleiben, sondern auf
+            Gebäude, Port und betroffene Kundensituation zeigen.
+          </p>
+        </div>
+        <div class="section-inner twin-grid">
+          <article class="solution-panel">
+            <div class="panel-label">Endpoint Discovery</div>
+            <h3>Endgeräte finden, bewerten und zuordnen.</h3>
+            <p>
+              Switch-Monitor kombiniert DHCP-Leases, ARP, DNS-PTR und SNMP-Kontext, um Hosts besser
+              einzuordnen. Mehrdeutige Zuordnungen werden mit Port-Kandidaten, Match-Grund und VLAN
+              transparent gemacht.
+            </p>
+            <ul class="check-list">
+              <li>Host- und Portkontext mit letzter Sichtung</li>
+              <li>Zuordnung zu Switch, Port, VLAN und Standort</li>
+              <li>Warnungen bei Identitätsänderungen oder unklaren Treffern</li>
+              <li>Altbestand wird markiert und nicht mehr automatisch weiterverwendet</li>
+            </ul>
+          </article>
+          <article class="solution-panel voltage-panel">
+            <div class="panel-label">DLMS-Spannungsüberwachung</div>
+            <h3>Spannungswerte operativ nutzbar machen.</h3>
+            <p>
+              DLMS-Abfragen liefern Spannungswerte pro Phase, inklusive Unterspannungs- und
+              Kommunikationswarnungen. Die Ergebnisse erscheinen im Dashboard, in Incidents, auf der
+              Karte und im Standortkontext.
+            </p>
+            <ul class="check-list">
+              <li>Messwerte für L1, L2 und L3 je Ziel</li>
+              <li>Stabile Phasenerkennung und konfigurierbare Schwellwerte</li>
+              <li>Auto-Übernahme erst nach mehrfach erfolgreicher Prüfung</li>
+              <li>Manuelle Behebung und Phasenbereinigung direkt im Incident-Kontext</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="automation" class="section automation-section">
+        <div class="section-inner section-heading">
+          <p class="section-kicker">Auto-Übernahmen</p>
+          <h2>Automatik dort, wo Signale mehrfach bestätigt und fachlich eindeutig sind.</h2>
+          <p>
+            Switch-Monitor kann neue Zustände übernehmen, ohne die Kontrolle abzugeben. Die
+            Automatik arbeitet mit Bestätigungsschwellen, schreibt Historie und blockiert Kandidaten,
+            wenn Daten widersprüchlich, als Altbestand markiert oder nicht stabil genug sind.
+          </p>
+        </div>
+        <div class="section-inner automation-grid">
+          <article class="automation-card">
+            <span class="feature-code">PM</span>
+            <h3>Port-Monitor Auto-Takeover</h3>
+            <p>
+              Neue dauerhaft aktive Ports können nach konfigurierbarer Anzahl bestätigter Polls in
+              die aktive Baseline übernommen werden. Danach gelten Soll- und Ist-Zustand konsistent
+              als UP, offene Meldungen werden als Baseline-Übernahme dokumentiert.
+            </p>
+            <ul class="check-list">
+              <li>Eigene Schwelle nur für Auto-Takeover</li>
+              <li>Reset bei Port-Down, Baseline-Wechsel oder geänderter Schwelle</li>
+              <li>Optional mit Mail-Bedingung und Incident-Verlauf gekoppelt</li>
+            </ul>
+          </article>
+          <article class="automation-card">
+            <span class="feature-code">SP</span>
+            <h3>Spannungs-Discovery Auto-Übernahme</h3>
+            <p>
+              Neue Zähler aus Endpoint Discovery werden optional als Spannungsziele angelegt, sobald
+              mehrere DLMS-Abfragen erfolgreich waren und die Phasen plausibel gelernt wurden.
+              Geisterwerte, Duplikate und Altbestand werden nicht übernommen.
+            </p>
+            <ul class="check-list">
+              <li>Mehrere erfolgreiche Messungen vor Zielanlage</li>
+              <li>Prüfung über Host, IP, Hostname, MAC und Switch-Port</li>
+              <li>Keine Übernahme von Altbestand oder ausgeblendeten Discovery-Kandidaten</li>
+            </ul>
+          </article>
+          <article class="automation-card">
+            <span class="feature-code">ED</span>
+            <h3>Discovery und Lifecycle</h3>
+            <p>
+              Hosts wechseln nachvollziehbar zwischen aktiv, offline, alt und Altbestand. Diese
+              Zustände steuern, welche Geräte noch als aktuelle Kandidaten gelten und welche nur
+              historisch sichtbar bleiben.
+            </p>
+            <ul class="check-list">
+              <li>History-Events für Altbestand und bereinigte Hosts</li>
+              <li>Schutz vor automatischer Wiederverwendung von Altbestand</li>
+              <li>Gezielte Bereinigung des Host-Caches möglich</li>
+            </ul>
+          </article>
+        </div>
+        <div class="section-inner process-strip" aria-label="Auto-Übernahme Ablauf">
+          <div>
+            <strong>1. Erkennen</strong>
+            <span>Port-, Endpoint- oder Spannungsdaten liefern einen neuen Kandidaten.</span>
+          </div>
+          <div>
+            <strong>2. Stabilisieren</strong>
+            <span>Mehrere Polls oder Messungen bestätigen, dass der Zustand belastbar ist.</span>
+          </div>
+          <div>
+            <strong>3. Übernehmen</strong>
+            <span>Baseline oder Spannungsprofil werden aktualisiert und die Historie bleibt nachvollziehbar.</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="screenshots" class="section section-alt screenshots-section" aria-labelledby="screens-title">
+        <div class="section-inner section-heading">
+          <p class="section-kicker">Produktansichten</p>
+          <h2 id="screens-title">Betriebssichten, die technische Details direkt verwertbar machen.</h2>
+          <p>
+            Die zusätzlichen Ansichten zeigen, wie Portzustand, Endpoint-Erkennung, Spannung,
+            Standort und Historie in der täglichen Arbeit zusammenlaufen.
+          </p>
+        </div>
+        <div class="section-inner screenshot-grid">
+          <figure class="screenshot-card screenshot-card-wide">
+            <img src="assets/screenshots/dashboard.png" alt="Switch-Monitor Dashboard mit Manager-Status und offenen Ereignissen" loading="lazy" />
+            <figcaption>
+              <strong>Dashboard</strong>
+              <span>Aktuelle Lage, Manager-Status und offene Ereignisse auf einen Blick.</span>
+            </figcaption>
+          </figure>
+          <figure class="screenshot-card">
+            <img src="assets/screenshots/map-live.png" alt="Kartenansicht mit farbigen Standortmarkern und Filterleiste" loading="lazy" />
+            <figcaption>
+              <strong>Karte</strong>
+              <span>Standortstatus, Ereignisse und Ausbaufortschritt räumlich einordnen.</span>
+            </figcaption>
+          </figure>
+          <figure class="screenshot-card">
+            <img src="assets/screenshots/inventory.png" alt="Inventaransicht mit Netzwerkgeräten und Portdetails" loading="lazy" />
+            <figcaption>
+              <strong>Inventar</strong>
+              <span>Switches, Ports, Gebäude- und Gerätezuordnung als gemeinsame Datenbasis pflegen.</span>
+            </figcaption>
+          </figure>
+          <figure class="screenshot-card">
+            <img src="assets/screenshots/topology-graph.png" alt="Topologieansicht mit Switch-Knoten und Verbindungen" loading="lazy" />
+            <figcaption>
+              <strong>Topologie</strong>
+              <span>Layer-2-Verbindungen visualisieren und Veränderungen nachvollziehen.</span>
+            </figcaption>
+          </figure>
+          <figure class="screenshot-card">
+            <img src="assets/screenshots/port-monitor.png" alt="Port-Monitor mit Baseline und Abweichungstabelle" loading="lazy" />
+            <figcaption>
+              <strong>Port-Monitor</strong>
+              <span>Baseline, Livezustand und Abweichungen sauber vergleichen.</span>
+            </figcaption>
+          </figure>
+          <figure class="screenshot-card">
+            <img src="assets/screenshots/endpoint-discovery.png" alt="Endpoint Discovery mit Hosttabelle und Detailansicht" loading="lazy" />
+            <figcaption>
+              <strong>Endpoint Discovery</strong>
+              <span>Hosts über Lease, MAC, VLAN und Portkandidaten bewerten und zuordnen.</span>
+            </figcaption>
+          </figure>
+          <figure class="screenshot-card">
+            <img src="assets/screenshots/voltage-tab.png" alt="Spannungstab mit DLMS-Messwerten und Statuszeilen" loading="lazy" />
+            <figcaption>
+              <strong>Spannung</strong>
+              <span>DLMS-Werte, Phasenstatus und Warnungen je Zählerprofil kontrollieren.</span>
+            </figcaption>
+          </figure>
+          <figure class="screenshot-card screenshot-card-portrait">
+            <img src="assets/screenshots/house-info.png" alt="House-Info Panel mit Anschluss-, Incident- und Spannungsdaten" loading="lazy" />
+            <figcaption>
+              <strong>Karte / House-Info</strong>
+              <span>Gebäude, Anschlussstatus, Incidents und letzte Spannungswerte in einer kompakten Seitenansicht.</span>
+            </figcaption>
+          </figure>
+          <figure class="screenshot-card">
+            <img src="assets/screenshots/performance.png" alt="Performance-Monitor mit Tabellen- und Verlaufsansicht" loading="lazy" />
+            <figcaption>
+              <strong>Performance</strong>
+              <span>Traffic, Errors und qualitative Auffälligkeiten als Verlauf beobachten.</span>
+            </figcaption>
+          </figure>
+          <figure class="screenshot-card">
+            <img src="assets/screenshots/incidents.png" alt="Incident-Liste mit Status, Gerät, Gebäude und Ticketdetails" loading="lazy" />
+            <figcaption>
+              <strong>Incidents</strong>
+              <span>Offene, behobene und historische Ereignisse filtern und dokumentieren.</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="einsatz" class="section usecase-section">
+        <div class="section-inner section-heading">
+          <p class="section-kicker">Typische Einsatzfälle</p>
+          <h2>Für Störungen, Fehlersuche und Betriebslage.</h2>
+          <p>
+            Switch-Monitor ist auf operative Situationen zugeschnitten, in denen technische Signale
+            schnell in verständliche Standort- und Handlungsinformationen übersetzt werden müssen.
+          </p>
+        </div>
+        <div class="section-inner usecase-list">
+          <article>
+            <span>Stromausfall im Teilgebiet</span>
+            <p>Mehrere Port- oder Ping-Ausfälle werden mit betroffenen Adressen und Kartenbezug sichtbar.</p>
+          </article>
+          <article>
+            <span>Kabelschaden oder Glasfaserbruch</span>
+            <p>Link-Status und Topologieabweichungen unterstützen die Eingrenzung der unterbrochenen Strecke.</p>
+          </article>
+          <article>
+            <span>Einzelner Smartmeter nicht erreichbar</span>
+            <p>Endpoint-, Port- und Spannungsdaten helfen, netzseitige Ursachen schneller auszuschliessen.</p>
+          </article>
+          <article>
+            <span>Endgerät-Anschlussort finden</span>
+            <p>Endpoint Discovery zeigt, an welchem Switch und Port ein Endgerät zuletzt gesehen wurde.</p>
+          </article>
+          <article>
+            <span>Spannungsunterbruch auf einzelnen Phasen</span>
+            <p>Das Spannungsmodul erkennt fehlende oder kritische Werte auf L1, L2 oder L3 und ordnet sie dem betroffenen Ziel zu.</p>
+          </article>
+          <article>
+            <span>Ausfall einer Ringleitung</span>
+            <p>Topology-Health erkennt fehlende Verbindungen, bevor daraus ein grösserer Ausfall entsteht.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="bereitstellung" class="section section-alt operations-section">
+        <div class="section-inner section-heading">
+          <p class="section-kicker">Anforderungen</p>
+          <h2>Benötigte Daten und Zugänge für die Inbetriebnahme.</h2>
+          <p>
+            Die Anforderungen hängen von den aktivierten Modulen ab. Die Tabelle zeigt, was für
+            den produktiven Nutzen benötigt wird und welche Daten nur zusätzliche Genauigkeit
+            liefern.
+          </p>
+        </div>
+        <div class="section-inner requirements-table-wrap">
+          <table class="requirements-table">
+            <thead>
+              <tr>
+                <th scope="col">Bereich</th>
+                <th scope="col">Benötigt</th>
+                <th scope="col">Optional / Genauigkeit</th>
+                <th scope="col">Nutzen</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Netzwerkgeräte</th>
+                <td>SNMP-Zugriff auf die gemanagten Switches; Switch-IPs können erfasst und per SNMP abgefragt werden.</td>
+                <td>Technische Schnittstelleninformationen aus SNMP; fachliche Portnamen kommen aus der Portdatenbank.</td>
+                <td>Technische Basis für Portstatus, Topologie, MAC-Tabellen und Performancewerte.</td>
+              </tr>
+              <tr>
+                <th scope="row">Portdatenbank</th>
+                <td>Excel-Export aus der bestehenden Glasfaserplanungssoftware, falls vorhanden.</td>
+                <td>Gebäude, Adresse, Portlabel, Gerätetyp und vorhandene Sollzustände.</td>
+                <td>Bessere Zuordnung für Port-Monitor, Karte, House-Info und Automatik.</td>
+              </tr>
+              <tr>
+                <th scope="row">Karte</th>
+                <td>Gebäudeadresse, Koordinaten und Tiles als Kartenmaterial.</td>
+                <td>POP-Standorte und Standortbezug werden über Adresse und Inventardaten übernommen.</td>
+                <td>Standortbezug für Störungen, Statusmarker und Gebäudeansicht.</td>
+              </tr>
+              <tr>
+                <th scope="row">Endpoint Discovery</th>
+                <td>Erreichbarer lokaler DHCP-Server; kein manueller DHCP-Import nötig.</td>
+                <td>DNS-/Namenskontext, wenn im Netz verfügbar.</td>
+                <td>Erkennen, wo Endgeräte zuletzt gesehen wurden.</td>
+              </tr>
+              <tr>
+                <th scope="row">Smartmeter / Spannung</th>
+                <td>Benutzer und Authentifizierungs-Passwort für die Smartmeter-Abfrage.</td>
+                <td>Profil- und Zielstruktur je nach gewünschter Überwachung.</td>
+                <td>DLMS-Spannungswerte, Phasenstatus und Auto-Übernahme geprüfter Ziele.</td>
+              </tr>
+              <tr>
+                <th scope="row">Alarmierung</th>
+                <td>Generische Alarm-Mailadresse für den Versand.</td>
+                <td>Empfänger je Manager und gewünschte Mailregeln.</td>
+                <td>Gezielte Digests für Port-Monitor, Live-Ping, Topologie, Endpoint, Spannung und Performance.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="section-inner operations-grid operations-followup">
+          <div>
+            <p class="section-kicker">Betrieb & Daten</p>
+            <h2>Für kontrollierte Nutzung im internen Netz.</h2>
+            <p>
+              Die Anwendung ist als Desktop-Werkzeug mit lokaler Datenhaltung, Rollen, Logging und
+              Backup/Restore ausgelegt. Kommunikation erfolgt über vorhandene interne Schnittstellen
+              wie SNMP, Ping, DLMS und SMTP.
+            </p>
+          </div>
+          <div class="ops-list" aria-label="Betriebsmerkmale">
+            <div>
+              <strong>Datenhaltung</strong>
+              <span>Lokaler SQLite-Datenordner und Logdaten für den internen Betrieb.</span>
+            </div>
+            <div>
+              <strong>Rollen</strong>
+              <span>Admin- und Viewer-Modus für lesende und schreibende Nutzung.</span>
+            </div>
+            <div>
+              <strong>Alarmierung</strong>
+              <span>E-Mail-Digests pro Monitoring-Manager über die generische Alarm-Mailadresse.</span>
+            </div>
+            <div>
+              <strong>Manager-Konfiguration</strong>
+              <span>Port-Monitor, Live-Ping, Topologie, Endpoint Discovery, Spannung, Performance und Incidents lassen sich getrennt konfigurieren.</span>
+            </div>
+            <div>
+              <strong>Backup</strong>
+              <span>Automatische und manuelle Backups mit konfigurierbarer Aufbewahrung.</span>
+            </div>
+            <div>
+              <strong>Export</strong>
+              <span>Incident-Export nach Excel sowie Inventar-Export als CSV oder Excel.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="kontakt" class="section contact-section">
+        <div class="section-inner contact-grid">
+          <div>
+            <p class="section-kicker">Kontakt</p>
+            <h2>Demo vereinbaren oder Anforderungen prüfen lassen.</h2>
+            <p>
+              Für eine Demo, technische Fragen oder eine erste Prüfung der vorhandenen Daten steht
+              Martin Carlini direkt zur Verfügung.
+            </p>
+            <div class="contact-actions" aria-label="Kontaktoptionen">
+              <a class="button button-primary" href="mailto:martincarlini1996@gmail.com?subject=Demo%20Switch-Monitor">Demo vereinbaren</a>
+              <a class="button button-outline" href="mailto:martincarlini1996@gmail.com?subject=Anforderungen%20Switch-Monitor">Anforderungen prüfen lassen</a>
+            </div>
+          </div>
+          <address class="contact-card">
+            <span>Ansprechpartner</span>
+            <strong>Martin Carlini</strong>
+            <a href="mailto:martincarlini1996@gmail.com">martincarlini1996@gmail.com</a>
+            <a href="tel:+41774236567">077 423 65 67</a>
+          </address>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-inner footer-inner">
+        <div>
+          <span>Switch-Monitor</span>
+          <p>Smartmeter-Netzüberwachung, Endpoint Discovery und Spannungsmonitoring.</p>
+        </div>
+        <div class="footer-meta">
+          <span>Version V3.17 · April 2026</span>
+          <span>Lokaler Betrieb im internen Netz</span>
+        </div>
+        <nav class="footer-links" aria-label="Rechtliches">
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
